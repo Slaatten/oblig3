@@ -6,5 +6,5 @@ CREATE TABLE Kjop (
     etternavn VARCHAR(30) NOT NULL,
     telefon VARCHAR(8) NOT NULL,
     epost VARCHAR(30) NOT NULL,
-    PRIMARY KEY (id),
+    PRIMARY KEY (id)
 );

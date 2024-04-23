@@ -25,7 +25,7 @@ public class KjopRepository {
     }
 
     public void slettAlle() {
-        String sql = "DELETE * FROM Kjop;";
+        String sql = "DELETE FROM Kjop;";
         db.update(sql);
     }
 
