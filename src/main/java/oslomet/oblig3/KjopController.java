@@ -22,6 +22,16 @@ public class KjopController {
         return rep.hentAlle();
     }
 
+    @GetMapping("/hentEnBillett")
+    public Kjop hentEnBillett(int id){
+        return rep.hentEnBillett(id);
+    }
+
+    @PostMapping("/endreBillett")
+    public void endreBillett(Kjop kjop){
+        rep.endreBillett(kjop);
+    }
+
     @GetMapping("/slettAlle")
     public void slettAlle() {
         rep.slettAlle();
