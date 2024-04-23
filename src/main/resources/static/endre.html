@@ -3,8 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <form class="form">
+        <input type="hidden" id="id" />
+        <div class="form-group">
+          <label for="film">Velg film</label>
+          <select name="filmer" id="film">
+            <option value="-1">Velg film her</option>
+            <option value="shawshank-redemption">Shawshank Redemption</option>
+            <option value="boyakka-boyakka-619">Boyakka Boyakka 619</option>
+            <option value="arrival">Arrival</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="antall">Antall</label>
+          <input type="number" class="form-control" id="antall"/>
+        </div>
+        <div class="form-group">
+          <label for="fornavn">Fornavn</label>
+          <input type="text" class="form-control" id="fornavn"/>
+        </div>
+        <div class="form-group">
+          <label for="etternavn">Etternavn</label>
+          <input type="text" class="form-control" id="etternavn"/>
+        </div>
+        <div class="form-group">
+          <label for="epost">E-post</label>
+          <input type="text" class="form-control" id="epost"/>
+        </div>
+        <div class="form-group">
+          <label for="telefon">Telefon</label>
+          <input type="text" class="form-control" id="telefon"/>
+        </div>
+      </form>
+      <button class="btn btn-primary" value="Endre" onclick="endreBillett()">Endre</button>
+    </div>
+  </div>
+</div>
+
+<script src="endre.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

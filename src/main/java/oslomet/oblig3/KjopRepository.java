@@ -24,6 +24,18 @@ public class KjopRepository {
         return alleBilletter;
     }
 
+    public Kjop hentEnBillett(int id) {
+        Object[] param = new Object[1];
+        param[0] = id;
+        String sql = "SELECT * FROM Kjop WHERE id=?";
+        Kjop billett = db.queryForObject(sql, param, BeanPropertyRowMapper.newInstance(Kjop.class));
+        return billett;
+    }
+    public void endreBillett(Kjop kjop){
+        String sql = "UPDATE Kjop SET film=?,antall=?, fornavn=?, etternavn=?, epost=?, telefon=? WHERE id=?";
+        db.update(sql, kjop.getFilm(), kjop.getAntall(), kjop.getFornavn(), kjop.getEtternavn(), kjop.getEpost(), kjop.getTelefon(), kjop.getId());
+    }
+
     public void slettAlle() {
         String sql = "DELETE FROM Kjop;";
         db.update(sql);
