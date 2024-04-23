@@ -19,10 +19,11 @@ public class KjopRepository {
     }
 
     public List<Kjop> hentAlle() {
-        String sql = "SELECT * FROM Kjop;";
+        String sql = "SELECT * FROM Kjop ORDER BY etternavn DESC;";
         List<Kjop> alleBilletter = db.query(sql, new BeanPropertyRowMapper<>(Kjop.class));
         return alleBilletter;
     }
+
 
     public Kjop hentEnBillett(int id) {
         Object[] param = new Object[1];
