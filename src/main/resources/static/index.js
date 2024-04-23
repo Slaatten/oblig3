@@ -79,7 +79,7 @@ function formaterData(billett) {
     ut += "</table>";
     $("#resultat").html(ut);
 }
-function slett() {
+function slettAlle() {
     $.get("/slettAlle", function () {
         hentAlle();
     });
@@ -89,7 +89,6 @@ function slett() {
 function slettEn (id) {
     let url = "/slettEn?id=" +id;
     $.get(url, function (){
-        hentAlle();
         window.location.href = "/";
     })
 }
