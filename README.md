@@ -7,3 +7,5 @@ Github repo URL: https://github.com/Slaatten/oblig3
 Fullt navn: Stian Slåtten
 
 Kort beskrivelse av applikasjon (5-10 setninger): Bestilling av kinobilletter, med styling og database
+
+Link til Youtube-video: https://www.youtube.com/watch?v=YBBvrGEfRDo
