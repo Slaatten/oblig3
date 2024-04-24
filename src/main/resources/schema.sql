@@ -1,10 +1,10 @@
 CREATE TABLE Kjop (
     id smallint NOT NULL AUTO_INCREMENT,
-    film VARCHAR(30) NOT NULL,
+    film VARCHAR(100) NOT NULL,
     antall INTEGER NOT NULL,
-    fornavn VARCHAR(30) NOT NULL,
-    etternavn VARCHAR(30) NOT NULL,
-    telefon VARCHAR(8) NOT NULL,
-    epost VARCHAR(30) NOT NULL,
+    fornavn VARCHAR(50) NOT NULL,
+    etternavn VARCHAR(50) NOT NULL,
+    telefon VARCHAR(15) NOT NULL,
+    epost VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
 );
